@@ -1,0 +1,30 @@
+.row__poster {
+    width: 100%;
+    object-fit: contain;
+    max-width: 10rem;
+    transition: transform 450ms;
+    margin-right: .625rem;
+    cursor: pointer;
+}
+.row__posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 1.25rem;
+}
+.row__posters::-webkit-scrollbar {
+    display: none;
+}
+.row__poster:hover {
+    transform: scale(1.08);
+}
+.row__posterLarge {
+    max-height: 16rem;
+}
+.row__posterLarge:hover {
+    transform: scale(1.09);
+}
+.row {
+    margin-left: 1.25rem;
+    color: white;
+}
