@@ -50,6 +50,7 @@ function Rows({ fetchUrl, title, isLargeRow }) {
         <div className="row__posters">
           {movie?.map((movie, index) => (
             <img
+              onError={(e) => (e.target.style.display = "none")}
               onClick={
                 () => handleClick(movie) // this will handle the movie
               }

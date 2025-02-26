@@ -1,4 +1,4 @@
-import axios from "../../Utils/axios"
+import axios from "../../Utils/axios";
 import React, { useEffect, useState } from "react";
 import requests from "../../Utils/requests";
 import "./Banner.css";
@@ -22,7 +22,7 @@ function Banner() {
   }, []); //the array meanes dependency, it change the thumbnail when click it
   // console.log(movie);
   function truncate(str, n) {
-    return str?.lenght > n ? str.substring(0, n - 1) + '...': str ;
+    return str?.lenght > n ? str.substring(0, n - 1) + "..." : str;
   }
 
   return (
